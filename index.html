@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Portofolio | Fahmi Bastari</title>
+    <link rel="icon" type="image/x-icon" href="icon-fahmi.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #272727;
+            color: #fff;
+            margin-top: 80px;
+        }
+
+        .container-grap {
+            max-width: 1200px;
+            /* margin: 50px auto; */
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cardtool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .cardtool:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .cardtool img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-title {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            display: block;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            .cardtool {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+            .tool {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+
+            h1, h2 {
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+  <nav
+  class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient"
+  style="
+    color: var(--bs-red);
+    background: linear-gradient(-172deg, #272727 0%, #272727),
+      var(--bs-blue);
+  "
+>
+  <div class="container-fluid">
+    <strong
+      class="navbar-brand text-capitalize fs-2 fw-bold logo"
+      href="index.html"
+      >FAHMI BASTARI</strong
+    ><button
+      data-bs-toggle="collapse"
+      class="navbar-toggler"
+      data-bs-target="#navbarNav"
+    >
+      <span class="visually-hidden">Toggle navigation</span
+      ><span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Graphic Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="video.html">Video Editing</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container-grap">
+        <h1><strong>TOOLS</strong></h1>
+    <div class="tool">
+        <div class="cardtool">
+            <img src="ai.png" alt="Adobe Illustrator">
+        </div>
+        <div class="cardtool">
+            <img src="ps.png" alt="Adobe Photoshop">
+        </div>
+        <div class="cardtool">
+            <img src="figma.png" alt="Figma" style="width: auto;">
+        </div>
+        <div class="cardtool">
+            <img src="pp.png" alt="Figma" style="width: auto;">
+        </div>
+        <div class="cardtool">
+            <img src="ae.png" alt="Figma" style="width: auto;">
+        </div>
+        <div class="cardtool">
+            <img src="cv.png" alt="Figma" style="width: auto;">
+        </div>
+        <div class="cardtool">
+            <img src="cc.png" alt="Figma" style="width: auto; border-radius: 20px;">
+        </div>
+    </div>
+    <br><br>
+    <br><br>
+        <h1><strong>GRAPHICS</strong></h1>
+
+        <h2><strong>Precious Moments</strong></h2>
+        <p><strong>Precious Moments</strong> is where people turn to make their celebrations unforgettable. Whether it's a wedding, birthday, or honoring a loved one, they trust our flower boards to beautifully express their emotions and create lasting memories.</p>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/presius/bungalogo.png')">
+                <img src="porto/presius/bungalogo.png" alt="Project 1">
+                <div class="card-title">Main Logo</div>
+            </div>
+            <div class="card" onclick="openModal('porto/presius/logo2presius.png')">
+                <img src="porto/presius/logo2presius.png" alt="Project 3">
+                <div class="card-title">Secondary Logo</div>
+            </div>
+            <div class="card" onclick="openModal('porto/presius/brandguideline-presius.png')">
+                <img src="porto/presius/brandguideline-presius.png" alt="Project 3">
+                <div class="card-title">Brand Identity</div>
+            </div>
+            <div class="card" onclick="openModal('porto/presius/twibbon.png')">
+                <img src="porto/presius/twibbon.png" alt="Project 3">
+                <div class="card-title">Promotion Twibbon</div>
+            </div>
+            <div class="card" onclick="openModal('porto/presius/story.png')">
+                <img src="porto/presius/story.png" alt="Project 3">
+                <div class="card-title">Promotion Pamphlet</div>
+            </div>
+            <div class="card" onclick="openModal('porto/presius/story2.png')">
+                <img src="porto/presius/story2.png" alt="Project 3">
+                <div class="card-title">Promotion Pamphlet 2</div>
+            </div>
+        </div>
+        <h2><strong>Istimewa Group</strong></h2>
+        <p><strong>Istimewa Group</strong> offers a variety of homemade delights, from coffee and traditional kue tat to flavorful mie ayam. Beyond food, they also provide cozy homestays, making every visit truly special and memorable.</p>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/isti/1.png')">
+                <img src="porto/isti/1.png" alt="Project 1">
+                <div class="card-title">Packaging  2020</div>
+            </div>
+            <div class="card" onclick="openModal('porto/isti/2.png')">
+                <img src="porto/isti/2.png" alt="Project 3">
+                <div class="card-title">Packaging 2024</div>
+            </div>
+            <div class="card" onclick="openModal('porto/isti/3.png')">
+                <img src="porto/isti/3.png" alt="Project 3">
+                <div class="card-title">Update Packaging Preview</div>
+            </div>
+            <div class="card" onclick="openModal('porto/isti/4.png')">
+                <img src="porto/isti/4.png" alt="Project 3">
+                <div class="card-title">Coffee Packaging</div>
+            </div>
+            <div class="card" onclick="openModal('porto/isti/5.png')">
+                <img src="porto/isti/5.png" alt="Project 3">
+                <div class="card-title">Mie Ayam Logo</div>
+            </div>
+            <div class="card" onclick="openModal('porto/isti/6.png')">
+                <img src="porto/isti/6.png" alt="Project 3">
+                <div class="card-title">Husna Homestay by Istimewa</div>
+            </div>
+        </div>
+
+        <h2><strong>Ultra Roast <br> Coffee Roastery</strong></h2>
+        <p><strong>Ultra Roast Coffee Roastery</strong> is where coffee lovers go to experience perfection in every cup. Known for its expertly roasted beans and rich flavors, people trust us to bring warmth and energy to their mornings and special moments alike.</p>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/ultraroast/logoultra.png')">
+                <img src="porto/ultraroast/logoultra.png" alt="Project 4">
+                <div class="card-title">Character Logo</div>
+            </div>
+            <div class="card" onclick="openModal('porto/ultraroast/logoultraroast.png')">
+                <img src="porto/ultraroast/logoultraroast.png" alt="Project 5">
+                <div class="card-title">Main Logo</div>
+            </div>
+            <div class="card" onclick="openModal('porto/ultraroast/logoultraroasttext.png')">
+                <img src="porto/ultraroast/logoultraroasttext.png" alt="Project 6">
+                <div class="card-title">Secondary Logo</div>
+            </div>
+        </div>
+
+        <h2>Some Sweets <br> by Risola.lpg</h2>
+        <p><strong>Some Sweets by Risola.lpg</strong> is where people satisfy their cravings for delightful sweet treats and creamy coffee. Loved for its variety of desserts, alongside savory snacks like risol mayo, it’s the go-to spot for a perfect balance of sweetness and flavor.</p>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/somswit/Foto Produk 1.png')">
+                <img src="porto/somswit/Foto Produk 1.png" alt="Project 4">
+                <div class="card-title">Product Presentation 1</div>
+            </div>
+            <div class="card" onclick="openModal('porto/somswit/Foto Produk 2.png')">
+                <img src="porto/somswit/Foto Produk 2.png" alt="Project 5">
+                <div class="card-title">Product Presentation 2</div>
+            </div>
+        </div>
+
+        <h2>Ambasuki</h2>
+        <p><strong>Ambasuki</strong> is a small yet determined community of three thesis warriors, supporting each other through the ups and downs of academic life. Together, they chase deadlines, share ideas, and stay motivated to reach the finish line!</p>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/amba/image1.png')">
+                <img src="porto/amba/image1.png" alt="Project 4">
+                <div class="card-title">Wallpaper 1</div>
+            </div>
+            <div class="card" onclick="openModal('porto/amba/image2.png')">
+                <img src="porto/amba/image2.png" alt="Project 5">
+                <div class="card-title">Wallpaper 2</div>
+            </div>
+            <div class="card" onclick="openModal('porto/amba/image3.png')">
+                <img src="porto/amba/image3.png" alt="Project 6">
+                <div class="card-title">Product</div>
+            </div>
+        </div>
+
+        <h2>Trotoar Coffee</h2>
+        <p><strong>Trotoar Coffee</strong> is the go-to spot for coffee lovers in Bandar Lampung, serving freshly brewed coffee right from a motorbike on the sidewalk. It’s where people stop by for a quick, delicious cup and a unique coffee experience on the go.</p>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/trotoar/TrotoarCoffee-Logo.png')">
+                <img src="porto/trotoar/TrotoarCoffee-Logo.png" alt="Project 4">
+                <div class="card-title">Main Logo and Advertising</div>
+            </div>
+        </div>
+        <h2>Minjem Kulkas</h2>
+        <p><strong>Minjem Kulkas</strong> is a coffee-to-go distributor that partners with restaurants by stocking their showcase refrigerators. It’s the perfect way for customers to enjoy quality coffee anytime, while restaurants gain an easy addition to their offerings.</p>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/minjem/Logo.jpg')">
+                <img src="porto/minjem/Logo.jpg" alt="Project 4">
+                <div class="card-title">Main Logo and Advertising</div>
+            </div>
+        </div>
+
+
+        <h2>Kekari Squad</h2>
+        <p><strong>Kekari Squad</strong> is a dedicated group of committee members from my neighborhood, working together to organize events, foster community spirit, and make our residential area a better place for everyone.</p>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/kekari/image1.jpg')">
+                <img src="porto/kekari/image1.jpg" alt="Project 4">
+                <div class="card-title">Indonesia's Independence Day Outfit</div>
+            </div>
+            <div class="card" onclick="openModal('porto/kekari/GSTEAM_Jersey.jpg')">
+                <img src="porto/kekari/GSTEAM_Jersey.jpg" alt="Project 5">
+                <div class="card-title">Pigeon Sport Outfit</div>
+            </div>
+        </div>
+
+        <h2>celebrations Banner</h2>
+        <div class="gallery">
+            <div class="card" onclick="openModal('porto/Banner/ambanner.jpg')">
+                <img src="porto/Banner/ambanner.jpg" alt="Project 7">
+                <div class="card-title">Ambasuki</div>
+            </div>
+            <div class="card" onclick="openModal('porto/Banner/project banner wisuda.jpg')">
+                <img src="porto/Banner/project banner wisuda.jpg" alt="Project 8">
+                <div class="card-title">Tolak Nganggur</div>
+            </div>
+        </div>
+    </div>
+    
+    <center>
+        <br><br><br>
+        <div class="mb-3 mr-3">
+            <a href="video.html">
+                <button class="btn  btn-secondary btn-block btn-lg">VIDEO EDITING</button>
+            </a>
+          </div>
+    </center>
+    
+
+    <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center">
+              <small class="block">&copy; 2025 Portofolio. All Rights Reserved.</small>
+              <small class="block">Design by <strong><a href="https://instagram.com/fahmibastari">@fahmibastari</a></strong>.</small>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <div class="modal" id="imageModal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Full View">
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
+        }
+    </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$font-family-sans-serif-2: 'Poppins', sans-serif;
+$font-family-serif: 'Source Serif Pro', serif;
+
+
+
+body {
+	font-family: $font-family-sans-serif;
+	
+}
+p {
+	color: darken(#ccc, 10%);
+	font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-family-sans-serif;
+}
+a {
+	transition: .3s all ease;
+	&, &:hover {
+		text-decoration: none!important;
+	}
+}
+.content {
+	padding: 7rem 0;
+}
+h2 {
+	font-size: 20px;
+}
+
+.btn {
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 0px;
+	border: none;
+	background: transparent!important;
+	color: $black!important;
+	position: relative;
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transition: .3s all ease;
+	}
+	&:before {
+		top: 3px;
+		right: 3px;
+		bottom: 3px;
+		background: $white;
+		z-index: -1;
+		left: 3px;
+		border: 1px solid $primary;	
+	}
+	&:after {
+		z-index: -2;
+		border: 1px solid $primary;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $primary;
+		}
+	}
+
+	
+	&.btn-sm {
+		font-size: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&.btn-lg {
+		font-size: 16px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+	&:hover, &:active, &:focus {
+		box-shadow: none;
+		color: $black;
+	}
+
+}
+
+/* Primary */
+.btn-primary {
+	&:before {
+		border-color: $primary;
+	}
+	&:after {
+		border-color: $primary;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $primary;
+		}
+	}
+}
+/* Secondary */
+.btn-secondary {
+	&:before {
+		border-color: $secondary;
+	}
+	&:after {
+		border-color: $secondary;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $secondary;
+		}
+	}
+}
+/* Success */
+.btn-success {
+	&:before {
+		border-color: $success;
+	}
+	&:after {
+		border-color: $success;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $success;
+		}
+	}
+}
+/* Info */
+.btn-info {
+	&:before {
+		border-color: $info;
+	}
+	&:after {
+		border-color: $info;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $info;
+		}
+	}
+}
+/* Warning */
+.btn-warning {
+	&:before {
+		border-color: $warning;
+	}
+	&:after {
+		border-color: $warning;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $warning;
+		}
+	}
+}
+/* Danger */
+.btn-danger {
+	&:before {
+		border-color: $danger;
+	}
+	&:after {
+		border-color: $danger;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $danger;
+		}
+	}
+}
+/* Orange */
+.btn-orange {
+	&:before {
+		border-color: $orange;
+	}
+	&:after {
+		border-color: $orange;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $orange;
+		}
+	}
+}
+/* Indigo */
+.btn-indigo {
+	&:before {
+		border-color: $indigo;
+	}
+	&:after {
+		border-color: $indigo;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $indigo;
+		}
+	}
+}
+/* Pink */
+.btn-pink {
+	&:before {
+		border-color: $pink;
+	}
+	&:after {
+		border-color: $pink;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $pink;
+		}
+	}
+}
+/* Purple */
+.btn-purple {
+	&:before {
+		border-color: $purple;
+	}
+	&:after {
+		border-color: $purple;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $purple;
+		}
+	}
+}
+/* Blue */
+.btn-blue {
+	&:before {
+		border-color: $blue;
+	}
+	&:after {
+		border-color: $blue;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: $blue;
+		}
+	}
+}
+/* Brown */
+.btn-brown {
+	&:before {
+		border-color: #a0855b;
+	}
+	&:after {
+		border-color: #a0855b;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: #a0855b;
+		}
+	}
+}
+/* Blue gray */
+.btn-blue-gray {
+	&:before {
+		border-color: #3f4d71;
+	}
+	&:after {
+		border-color: #3f4d71;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: #3f4d71;
+		}
+	}
+}
+
+/* Deep orange */
+.btn-deep-orange {
+	&:before {
+		border-color: #ffac8e;
+	}
+	&:after {
+		border-color: #ffac8e;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: #ffac8e;
+		}
+	}
+}
+
+/* Aqua */
+.btn-aqua {
+	&:before {
+		border-color: #3fc5f0;
+	}
+	&:after {
+		border-color: #3fc5f0;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: #3fc5f0;
+		}
+	}
+}
+/* Dark */
+
+.btn-dark {
+	&:before {
+		border-color: #393e46;
+	}
+	&:after {
+		border-color: #393e46;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: #393e46;
+		}
+	}
+}
+/* Black */
+.btn-black {
+	&:before {
+		border-color: #000;
+	}
+	&:after {
+		border-color: #000;
+	}
+	&:hover, &:focus {
+		&:after {
+			background: #000;
+		}
+	}
+}
+
+/* Light */
+.btn-light {
+	&:before {
+		border-color: darken($light,10%);
+	}
+	&:after {
+		border-color: darken($light,10%);
+	}
+	&:hover, &:focus {
+		&:after {
+			background: darken($light,10%);
+		}
+	}
+}
