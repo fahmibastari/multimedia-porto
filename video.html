@@ -15,7 +15,60 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
-  
+  <style>
+    /* .contool {
+            max-width: 1200px;
+            /* margin: 50px auto; */
+            /* padding: 20px; */
+         /* } * */
+
+    .tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    }
+
+    .cardtool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.2s;
+    cursor: pointer;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .cardtool:hover {
+     transform: scale(1.05);
+        }
+
+        .cardtool img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+          .cardtool {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+            .tool {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+
+            h1, h2 {
+                text-align: center;
+            }
+        }
+
+  </style>
 </head>
 <body>
     <nav
@@ -52,6 +105,27 @@
         </div>
       </div>
     </nav>
+    <div class="contool">
+      <br><br><br>
+      <br><br>
+      <div class="container-grap">
+        <h1 style="color: aliceblue;"><strong>TOOLS</strong></h1><br>
+    <div class="tool">
+        <div class="cardtool">
+            <img src="pp.png" alt="Figma" style="width: auto;">
+        </div>
+        <div class="cardtool">
+            <img src="ae.png" alt="Figma" style="width: auto;">
+        </div>
+        <div class="cardtool">
+            <img src="cc.png" alt="Figma" style="width: auto; border-radius: 20px;">
+        </div>
+    </div>
+    </div>
+    <br><br>
+    <br><br>
+    <h1 style="color: aliceblue;"><strong>VIDEOS</strong></h1>
+
 <div class="container">
 
    <div class="main-video-container">

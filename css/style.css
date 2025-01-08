@@ -17,10 +17,10 @@ body{
 .container{
    /* flex-direction: column; */
    max-width: 1200px;
-   margin:100px auto;
+   margin: 50px auto;
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
+   /* align-items: center; */
    gap:20px;
 }
 
