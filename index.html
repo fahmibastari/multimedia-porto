@@ -7,6 +7,7 @@
   <title>Portfolio | Fahmi Bastari</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  
 
   <!-- Favicons -->
   <link href="HalftoneHead - Fahmi.png" rel="icon">
@@ -23,6 +24,10 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<!-- Tailwind & Devicon -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -58,15 +63,15 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <section id="hero" class="hero section light-background shadow-md">
 
-      <img src="" alt="">
+      <img src="assets/img/bgbg.png" alt="">
 
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2>FAHMI BASTARI</h2>
-            <p>I'm <span class="typed" data-typed-items="Web Developer, Multimedia Editor, Freelancer">Web Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <p>I'm <span class="typed" data-typed-items="Web Developer, Fullstack Developer, FrontEnd Developer">Web Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="https://github.com/fahmibastari/"><i class="bi bi-github"></i></a>
               <a href="https://instagram.com/fahmibastari/"><i class="bi bi-instagram"></i></a>
@@ -82,559 +87,517 @@
     <section id="about" class="about section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title text-center" data-aos="fade-up">
         <h2>About</h2>
-        <p>I’m a passionate and driven UX/UI Designer with a background in Computer Science from Universitas Lampung. Over the years, I’ve worked on various web development and digital design projects, striving to create seamless, user-friendly experiences. My interest lies in combining design thinking and technical skills to develop digital products that not only meet business goals but also provide a meaningful experience for users. I thrive in collaborative environments, enjoy problem-solving, and am committed to continuous learning and improving my craft.</p>
+        <div class="flex justify-center my-6">
+          <img src="assets/img/PP2.png" alt="Fahmi Bastari" 
+            class="w-40 h-40 object-cover rounded-full transition-transform duration-300 hover:scale-105 shadow-md">
+        </div>
+        <p>Front-End and Mobile Developer with strong expertise in React.js, Next.js, and React Native, experienced in building
+          scalable, data-driven web and mobile applications. Proficient in RESTful API integration, dashboard interfaces, and
+          responsive design using modern front-end ecosystems. Skilled at transforming complex operational and maintenance
+          data into intuitive visual dashboards that enhance decision-making and productivity. Demonstrates strong problem-
+          solving, communication, and collaboration skills in remote, Agile environments, with hands-on experience supporting
+          digital projects for both educational and government institutions.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/IMG_3300 (1).png" class="img-fluid" alt="Muhammad Fahmi Bastari" style="border-radius: 100px;">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Web Developer & Multimedia Editor</h2>
+          <div class="col-lg-8 content text-center">
+            <h2>Front-End & Mobile Developer</h2>
             <p class="fst-italic py-3">
-              Dedicated to delivering high-quality results by combining strong technical skills with creativity and effective teaching experience.
+              Passionate about creating modern, data-driven, and user-friendly web and mobile applications through clean code,
+              scalability, and thoughtful UI/UX design.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Teluk Betung Selatan, Bandar Lampung</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>fahmibastari549@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+628-127166-2745</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="tinyurl.com/PortofolioFahmiBastari" target="_blank">PortofolioFahmiBastari</a></span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Bachelor of Computer Science (2020-2025)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Skills:</strong> <span>Web development, Graphic Design, Video Editor</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">
-              I am passionate about combining web technology and multimedia to create interactive and engaging content. Committed to continuous learning and collaborative project success.
-            </p>
-          </div>
-        </div>
+  
+            <!-- Skill Section (Expanded + Hover + Tooltip) -->
+<div class="flex flex-col items-center justify-center py-8 space-y-10">
+
+  <!-- === Languages & Frameworks === -->
+  <div class="mb-12" data-aos="fade-up">
+    <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 after:mt-2">
+      Languages & Frameworks
+    </h3>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Items -->
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-html5-plain text-6xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">HTML</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-css3-plain text-6xl text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">CSS</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-javascript-plain text-6xl text-yellow-400 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">JavaScript (ES6+)</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-typescript-plain text-6xl text-blue-600 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">TypeScript</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-php-plain text-6xl text-indigo-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">PHP</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-laravel-plain text-6xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Laravel</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-codeigniter-plain text-6xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">CodeIgniter</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-react-original text-6xl text-sky-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">React</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <span class="iconify text-6xl text-gray-900 group-hover:scale-110 transition-transform duration-300" data-icon="skill-icons:nextjs-light"></span>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Next.js</p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-nodejs-plain text-6xl text-green-600 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Node.js</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- === Database & APIs === -->
+  <div class="mb-12" data-aos="fade-up" data-aos-delay="100">
+    <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-green-500 after:to-blue-500 after:mt-2">
+      Database & APIs
+    </h3>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-postgresql-plain text-6xl text-sky-600 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">PostgreSQL</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-mysql-plain text-6xl text-blue-600 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">MySQL</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-prisma-original text-6xl text-gray-700 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Prisma ORM</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-supabase-plain text-6xl text-emerald-600 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Supabase</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-graphql-plain text-6xl text-pink-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">GraphQL</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-postman-plain text-6xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">REST API</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- === UI/UX & Tools === -->
+  <div data-aos="fade-up" data-aos-delay="200">
+    <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-purple-500 after:to-pink-500 after:mt-2">
+      UI/UX & Tools
+    </h3>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-tailwindcss-plain text-6xl text-teal-400 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Tailwind CSS</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-figma-plain text-6xl text-purple-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Figma</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-git-plain text-6xl text-orange-600 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Git</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-docker-plain text-6xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Docker</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-vercel-original text-6xl text-black group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Vercel</p>
+      </div>
+      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+        <i class="devicon-netlify-plain text-6xl text-teal-500 group-hover:scale-110 transition-transform duration-300"></i>
+        <p class="font-medium text-gray-800 mt-3 text-sm">Netlify</p>
+      </div>
+    </div>
+  </div>
       </div>
 
     </section><!-- /About Section -->
+<!-- Resume Section -->
+<section id="resume" class="resume section">
 
+  <div class="container">
+    <div class="row gy-4">
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Experienced UX/UI Designer and Web Developer with a strong academic background in Computer Science from Universitas Lampung. Skilled in user-centered design, web programming, and multimedia content creation. Proven ability to deliver high-quality digital solutions through iterative UX research, usability testing, and collaborative design processes. Passionate about creating seamless, user-friendly experiences and collaborating with cross-functional teams to meet both user needs and business goals.</p>
-      </div><!-- End Section Title -->
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>Fahmi Bastari</h4>
+          <p><em>Front-End and Mobile Developer with strong expertise in React.js, Next.js, and React Native. Experienced in building scalable, data-driven web and mobile applications, integrating RESTful APIs, and developing responsive interfaces. Skilled at transforming complex data into intuitive dashboards that enhance productivity and decision-making. Combines technical precision with communication and problem-solving abilities across collaborative environments.</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Bandar Lampung, Indonesia</li>
+            <li>+62 812-7166-2745</li>
+            <li>fahmibastari.work@gmail.com</li>
+          </ul>
+        </div><!-- End Summary -->
 
-      <div class="container">
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>Bachelor of Computer Science</h4>
+          <h5>Aug 2020 - Nov 2025</h5>
+          <p><em>University of Lampung</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>GPA: 3.14 / 4.00 — Predicate: Very Satisfactory</li>
+            <li>Thesis: “Development of Web-Based Job Vacancy Information System at CCED Universitas Lampung.”</li>
+            <li>Developed using Next.js, Prisma ORM, NeonDB, and Tailwind CSS focusing on usability and performance optimization.</li>
+          </ul>
+        </div><!-- End Education -->
+        <h3 class="resume-title">Leadership & Organizational Experience</h3>
+        <div class="resume-item">
+          <h4>Community Service Program (Leader)</h4>
+          <h5>2024</h5>
+          <p><em>University of Lampung</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Led 9 student groups across multiple villages, managing coordination, documentation, and communication with local stakeholders.</li>
+            <li>Organized digital literacy and web-based education programs, ensuring all projects were completed successfully.</li>
+            <li>Developed leadership, teamwork, and decision-making skills through real-world challenges.</li>
+          </ul>
+        </div><!-- End Experience Item -->
 
-        <div class="row">
+        <div class="resume-item">
+          <h4>Technology Club & Student Projects</h4>
+          <h5>2021 - 2024</h5>
+          <p><em>University of Lampung</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Collaborated in app prototyping and student showcases promoting digital innovation.</li>
+            <li>Strengthened adaptability, public speaking, and problem-solving skills in team environments.</li>
+            <li>Actively participated in UI/UX innovation and mobile prototyping projects promoting inclusive technology adoption.</li>
+          </ul>
+        </div><!-- End Experience Item -->
+        <h3 class="resume-title">Certifications</h3>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-              <div class="resume-item pb-0">
-                <h4>Fahmi Bastari</h4>
-                <p><em>Creative and results-driven UX/UI Designer with experience in developing intuitive, user-centered digital products. Expertise in wireframing, prototyping, and conducting user testing to enhance product usability. Proficient in design tools such as Figma, Adobe XD, and web development technologies including HTML, CSS, and JavaScript. Proven ability to collaborate with cross-functional teams and stakeholders to drive strategic UX decisions that align with business goals and user needs.</em></p>
-                <ul>
-                  <li>Lampung, Indonesia.</li>
-                  <li>+62 812-7166-2745</li>
-                  <li>fahmibastari549@gmail.com</li>
-                </ul>
-          </div><!-- End Resume Item -->
+        <div class="resume-item">
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>
+              <strong>RevoU Certified Online Course - Data Analytics Fundamentals</strong><br>
+              Issued: October 2025<br>
+              <a href="https://drive.google.com/file/d/1xPcgB_JEpJ1F5E6Tt4_LWsyWxw-8Jfxj/view?usp=sharing" target="_blank">View Certificate</a>
+            </li>
 
+            <li class="mt-3">
+              <strong>Dicoding Indonesia - Belajar Dasar Pemrograman Web</strong><br>
+              Issued: June 2025 • 41-hour course on HTML, CSS, and Responsive Layout<br>
+              <a href="https://www.dicoding.com/certificates/JMZVEY493PN9" target="_blank">View Certificate</a>
+            </li>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Computer Science</h4>
-              <h5>2020 - 2025</h5>
-              <p><em>University of Lampung</em></p>
-              <p>Completed a comprehensive undergraduate thesis titled "Development of Web-Based Job Vacancy Information System at the Center for Career and Entrepreneurship Development (CCED), Universitas Lampung". The project involved designing and implementing a modern, responsive web application to facilitate job vacancy dissemination and application processes for students and alumni. Technologies used include Next.js, Prisma ORM, and NeonDB database, focusing on improving user experience, data management, and system efficiency. The thesis demonstrated practical skills in software development, user interface design, and system testing with positive user acceptance results.</p>
-            </div><!-- Edn Resume Item -->
-          </div>
+            <li class="mt-3">
+              <strong>MySkill Indonesia - Website Development Fundamentals (2025)</strong><br>
+              ▪ <a href="https://drive.google.com/file/d/1ERmCuyyZOENhnFhBWZcWCqULnCMfuS7y/view?usp=drive_link" target="_blank">API Introduction</a><br>
+              ▪ <a href="https://drive.google.com/file/d/1rp3gYpZf-avzax7j6nMX2G-PGWsiNuoW/view?usp=drive_link" target="_blank">Back-End Development Introduction</a><br>
+              ▪ <a href="https://drive.google.com/file/d/1rtY3nkHA4lFQfhC_RYxFq_teXPV-6Zmp/view?usp=drive_link" target="_blank">Front-End Development Introduction</a><br>
+              ▪ <a href="https://drive.google.com/file/d/1hlfocz3C9G2D3DtNH1vxdusFMYi0we4y/view?usp=drive_link" target="_blank">Internet Introduction</a>
+            </li>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Work Experience</h3>
+            <li class="mt-3">
+              <strong>Alumni Talk Series: Software Engineering 1st Edition</strong> - University of Lampung<br>
+              Theme: Software Engineer Android di Dunia Startup – April 2021<br>
+              <a href="https://drive.google.com/file/d/1K5JuIGq90v7ywzjgfkJJPrVvF4oIDYqr/view?usp=drive_link" target="_blank">View Certificate</a>
+            </li>
 
-<div class="resume-item">
-  <h4>Assistant Lecturer – Web Programming</h4>
-  <h5>February 2022 - July 2024</h5>
-  <p><em>University of Lampung</em></p>
-    <p>As a Web Programming Assistant Lecturer, I taught web programming with a focus on creating responsive and user-friendly interfaces using technologies like HTML, CSS, JavaScript, and PHP. My role involved mentoring students in applying design principles, wireframing, and prototyping to develop web applications that enhance user experience. I also developed assessment criteria based on UX/UI best practices, ensuring that students designed effective, usable interfaces that addressed real-world user experience challenges. My guidance helped students develop not only their technical skills but also their ability to critically evaluate and iterate on their work to improve usability and design quality.</p>
-</div>
+            <li class="mt-3">
+              <strong>General Lecture: “Roadmaps to Become a Mobile Developer”</strong> - University of Lampung<br>
+              Faculty of Mathematics and Natural Sciences<br>
+              <a href="https://drive.google.com/file/d/16KDEv4IYpaZtMs0nTm0cK7n5cnhCoqII/view?usp=drive_link" target="_blank">View Certificate</a>
+            </li>
 
-<div class="resume-item">
-  <h4>Assistant Lecturer – Augmented and Virtual Reality</h4>
-  <h5>February 2025 - July 2025</h5>
-  <p><em>University of Lampung</em></p>
-  <p>In my role as an Augmented and Virtual Reality Assistant Lecturer, I delivered lectures and practical training on AR/VR technologies, with a strong emphasis on user interface and user experience design in immersive environments. I guided students through the process of designing and evaluating user-centric AR/VR applications, ensuring that the interaction and usability were intuitive and seamless. Additionally, I organized hands-on sessions focused on user feedback and iterative design improvements, helping students refine their designs to achieve a better overall user experience. This experience allowed me to foster a deep understanding of how immersive technologies can be enhanced through thoughtful and user-centered design principles.</p>
-</div>
-
-<div class="resume-item">
-  <h4>Web Programming Teacher (Community Service Program)</h4>
-  <h5>Jan 2024</h5>
-  <p><em>SMK Rasman Mulya</em></p>
-  <p>In this role, I delivered foundational lessons in web interface design, introducing students to the principles of layout, typography, and color theory. I focused on user-centered design and usability, supporting students in developing simple web projects. Throughout the process, I provided continuous feedback and technical guidance, helping students iteratively improve their designs by focusing on accessibility and responsive design for diverse users. Additionally, I mentored students in the integration of user feedback to improve the usability of their projects, ensuring their work aligned with industry standards for effective and engaging user experiences.</p>
-</div>
-
-<div class="resume-item">
-  <h4>Public Relations Intern</h4>
-  <h5>Dec 2022 - Feb 2023</h5>
-  <p><em>Regional Office of Ministry of Religious Affairs, Lampung Province</em></p>
- <p>During my internship at the Ministry of Religious Affairs, I designed and developed a web-based letter archiving system, prioritizing ease of use and intuitive user workflows. In addition to this, I created and managed multimedia content for both web and social platforms, applying visual communication and layout skills to enhance user engagement. I collaborated with cross-functional teams to ensure that the digital products aligned with user needs and organizational objectives, focusing on ensuring usability and relevance to the target audience. This internship provided valuable experience in working with both design and functionality, ensuring seamless interaction and improving overall user satisfaction.</p>
-</div>
-
-<div class="resume-item">
-  <h4>Freelance Video Editor & Graphic Designer</h4>
-  <h5>July 2016 - 2025</h5>
-  <p>In my role as a Video Editor and Graphic Designer, I edited promotional videos and designed engaging graphics for various clients, tailoring each project to meet their specific needs and brand identity. I am proficient in Adobe Premiere, After Effects, Photoshop, and Illustrator, utilizing these tools to create high-quality multimedia content that aligns with client expectations. Additionally, I managed client projects from start to finish, ensuring timely delivery while maintaining high standards of quality. Through effective communication and collaboration, I consistently ensured that each project met both the creative and practical needs of the client.
-  </p>
-</div>
-
-
-          </div>
-
-        </div>
-
+            <li class="mt-3">
+              <strong>GEMASTIK XV (National ICT Competition) - Participant</strong><br>
+              Represented University of Lampung in the National ICT competition, enhancing teamwork, analytical thinking, and digital innovation capabilities.<br>
+              <a href="https://drive.google.com/file/d/1uMQTNaP5uCBohXTON87ElEq7pj-5n20E/view?usp=drive_link" target="_blank">View Certificate</a>
+            </li>
+          </ul>
+        </div><!-- End Certifications -->
       </div>
 
-    </section><!-- /Resume Section -->
+      <!-- RIGHT COLUMN -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+        <h3 class="resume-title">Experience</h3>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portofolio</h2>
-        <p>Here you can explore a selection of my recent work that reflects my skills in web development, multimedia editing, and creative design. Each project highlights my commitment to quality and innovation.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Graphic</li>
-            <li data-filter=".filter-branding">Web</li>
-            <li data-filter=".filter-certificate">Certificate</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Precious Moments/Logo-Warm.png" class="img-fluid" alt="Precious Moments Logo Warm">
-              <div class="portfolio-info">
-                <h4>Precious Moments Logo Warm</h4>
-                <p>Logo warm style design.</p>
-                <a href="porto/Precious Moments/Logo-Warm.png" title="Precious Moments Logo Warm" data-gallery="portfolio-gallery-precious" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Precious Moments/Logo-Text.png" class="img-fluid" alt="Precious Moments Logo Text">
-              <div class="portfolio-info">
-                <h4>Precious Moments Logo Text</h4>
-                <p>Logo text design project.</p>
-                <a href="porto/Precious Moments/Logo-Text.png" title="Precious Moments Logo Text" data-gallery="portfolio-gallery-precious" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Precious Moments/brandguideline.png" class="img-fluid" alt="Precious Moments Brand Guideline">
-              <div class="portfolio-info">
-                <h4>Precious Moments Brand Guideline</h4>
-                <p>Brand guideline design project.</p>
-                <a href="porto/Precious Moments/brandguideline.png" title="Precious Moments Brand Guideline" data-gallery="portfolio-gallery-precious" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Precious Moments/twibbonPromo.png" class="img-fluid" alt="Precious Moments Twibbon Promo">
-              <div class="portfolio-info">
-                <h4>Precious Moments Twibbon Promo</h4>
-                <p>Twibbon promotional design.</p>
-                <a href="porto/Precious Moments/twibbonPromo.png" title="Precious Moments Twibbon Promo" data-gallery="portfolio-gallery-precious" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Precious Moments/InstagramStory1.png" class="img-fluid" alt="Precious Moments Instagram Story 1">
-              <div class="portfolio-info">
-                <h4>Precious Moments Instagram Story 1</h4>
-                <p>Instagram story design.</p>
-                <a href="porto/Precious Moments/InstagramStory1.png" title="Precious Moments Instagram Story 1" data-gallery="portfolio-gallery-precious" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Precious Moments/InstagramStoryPromo.png" class="img-fluid" alt="Precious Moments Instagram Story Promo">
-              <div class="portfolio-info">
-                <h4>Precious Moments Instagram Story Promo</h4>
-                <p>Instagram story promotional design.</p>
-                <a href="porto/Precious Moments/InstagramStoryPromo.png" title="Precious Moments Instagram Story Promo" data-gallery="portfolio-gallery-precious" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->  
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Some Sweets/Foto Produk 1- Melted Top Biscuit.png" class="img-fluid" alt="Melted Top Biscuit">
-              <div class="portfolio-info">
-                <h4>Melted Top Biscuit</h4>
-                <p>Product photo of Melted Top Biscuit.</p>
-                <a href="porto/Some Sweets/Foto Produk 1- Melted Top Biscuit.png" title="Melted Top Biscuit" data-gallery="portfolio-gallery-sweets" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Some Sweets/Foto Produk 2 - Kopsu Series.png" class="img-fluid" alt="Kopsu Series">
-              <div class="portfolio-info">
-                <h4>Kopsu Series</h4>
-                <p>Product photo of Kopsu Series.</p>
-                <a href="porto/Some Sweets/Foto Produk 2 - Kopsu Series.png" title="Kopsu Series" data-gallery="portfolio-gallery-sweets" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/isti/1.png" class="img-fluid" alt="Isti Image 1">
-              <div class="portfolio-info">
-                <h4>Istimewa Group Project Image 1</h4>
-                <p>Preview of Istimewa Group project.</p>
-                <a href="porto/isti/1.png" title="Isti Image 1" data-gallery="portfolio-gallery-isti" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/isti/2.png" class="img-fluid" alt="Isti Image 2">
-              <div class="portfolio-info">
-                <h4>Istimewa Group Project Image 2</h4>
-                <p>Preview of Istimewa Group project.</p>
-                <a href="porto/isti/2.png" title="Isti Image 2" data-gallery="portfolio-gallery-isti" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/isti/3.png" class="img-fluid" alt="Isti Image 3">
-              <div class="portfolio-info">
-                <h4>Istimewa Group Project Image 3</h4>
-                <p>Preview of Istimewa Group project.</p>
-                <a href="porto/isti/3.png" title="Isti Image 3" data-gallery="portfolio-gallery-isti" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/isti/4.png" class="img-fluid" alt="Isti Image 4">
-              <div class="portfolio-info">
-                <h4>Istimewa Group Project Image 4</h4>
-                <p>Preview of Istimewa Group project.</p>
-                <a href="porto/isti/4.png" title="Isti Image 4" data-gallery="portfolio-gallery-isti" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/isti/5.png" class="img-fluid" alt="Isti Image 5">
-              <div class="portfolio-info">
-                <h4>Istimewa Group Project Image 5</h4>
-                <p>Preview of Istimewa Group project.</p>
-                <a href="porto/isti/5.png" title="Isti Image 5" data-gallery="portfolio-gallery-isti" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/isti/6.png" class="img-fluid" alt="Isti Image 6">
-              <div class="portfolio-info">
-                <h4>Istimewa Group Project Image 6</h4>
-                <p>Preview of Istimewa Group project.</p>
-                <a href="porto/isti/6.png" title="Isti Image 6" data-gallery="portfolio-gallery-isti" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Kekari Squad/GSTEAM_Jersey.jpg" class="img-fluid" alt="Kekari Squad GSTEAM Jersey">
-              <div class="portfolio-info">
-                <h4>Kekari Squad GSTEAM Jersey</h4>
-                <p>Design of the GSTEAM Jersey for Kekari Squad.</p>
-                <a href="porto/Kekari Squad/GSTEAM_Jersey.jpg" title="Kekari Squad GSTEAM Jersey" data-gallery="portfolio-gallery-kekari" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Kekari Squad/Uniform.jpg" class="img-fluid" alt="Kekari Squad Uniform">
-              <div class="portfolio-info">
-                <h4>Kekari Squad Uniform</h4>
-                <p>Uniform design for Kekari Squad.</p>
-                <a href="porto/Kekari Squad/Uniform.jpg" title="Kekari Squad Uniform" data-gallery="portfolio-gallery-kekari" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Banner/Banner-Graduation-Ambasuki.jpg" class="img-fluid" alt="Graduation Banner - Ambasuki">
-              <div class="portfolio-info">
-                <h4>Graduation Banner – Ambasuki</h4>
-                <p>Custom banner design for Ambasuki graduation event.</p>
-                <a href="porto/Banner/Banner-Graduation-Ambasuki.jpg" title="Graduation Banner – Ambasuki" data-gallery="portfolio-gallery-banner" class="glightbox preview-link">
-                  <i class="bi bi-zoom-in"></i>
-                </a>
-                <a href="#" title="More Details" class="details-link">
-                  <i class="bi bi-link-45deg"></i>
-                </a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Banner/Banner-Graduation-Order UM Malang.jpg" class="img-fluid" alt="Graduation Banner - UM Malang">
-              <div class="portfolio-info">
-                <h4>Graduation Banner – UM Malang</h4>
-                <p>Banner order design for University of Malang graduation.</p>
-                <a href="porto/Banner/Banner-Graduation-Order UM Malang.jpg" title="Graduation Banner – UM Malang" data-gallery="portfolio-gallery-banner" class="glightbox preview-link">
-                  <i class="bi bi-zoom-in"></i>
-                </a>
-                <a href="#" title="More Details" class="details-link">
-                  <i class="bi bi-link-45deg"></i>
-                </a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Minjem Kulkas/Logo.jpg" class="img-fluid" alt="Minjem Kulkas Logo">
-              <div class="portfolio-info">
-                <h4>Minjem Kulkas Logo</h4>
-                <p>Logo design project for Minjem Kulkas.</p>
-                <a href="porto/Minjem Kulkas/Logo.jpg" title="Minjem Kulkas Logo" data-gallery="portfolio-gallery-minjem" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/Trotoar Coffee/TrotoarCoffee-Logo.png" class="img-fluid" alt="Trotoar Coffee Logo">
-              <div class="portfolio-info">
-                <h4>Trotoar Coffee Logo</h4>
-                <p>Logo design project for Trotoar Coffee.</p>
-                <a href="porto/Trotoar Coffee/TrotoarCoffee-Logo.png" title="Trotoar Coffee Logo" data-gallery="portfolio-gallery-trotoar" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/amba/image1.png" class="img-fluid" alt="Amba Image 1">
-              <div class="portfolio-info">
-                <h4>Ambasuki Project Image 1</h4>
-                <p>Preview of Amba application.</p>
-                <a href="porto/amba/image1.png" title="Amba Image 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/amba/image2.png" class="img-fluid" alt="Amba Image 2">
-              <div class="portfolio-info">
-                <h4>Ambasuki Project Image 2</h4>
-                <p>Preview of Amba application.</p>
-                <a href="porto/amba/image2.png" title="Amba Image 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/amba/image3.png" class="img-fluid" alt="Amba Image 3">
-              <div class="portfolio-info">
-                <h4>Ambasuki Project Image 3</h4>
-                <p>Preview of Amba application.</p>
-                <a href="porto/amba/image3.png" title="Amba Image 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/UltraRoast Coffee Roastery/Logo-Full.png" class="img-fluid" alt="UltraRoast Full Logo">
-              <div class="portfolio-info">
-                <h4>UltraRoast Full Logo</h4>
-                <p>Full version of the UltraRoast Coffee Roastery logo.</p>
-                <a href="porto/UltraRoast Coffee Roastery/Logo-Full.png" title="UltraRoast Full Logo" data-gallery="portfolio-gallery-ultraroast" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/UltraRoast Coffee Roastery/Logo-Icon.png" class="img-fluid" alt="UltraRoast Icon Logo">
-              <div class="portfolio-info">
-                <h4>UltraRoast Icon Logo</h4>
-                <p>Minimal icon version of the UltraRoast logo.</p>
-                <a href="porto/UltraRoast Coffee Roastery/Logo-Icon.png" title="UltraRoast Icon Logo" data-gallery="portfolio-gallery-ultraroast" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="porto/UltraRoast Coffee Roastery/Logo-Text.png" class="img-fluid" alt="UltraRoast Text Logo">
-              <div class="portfolio-info">
-                <h4>UltraRoast Text Logo</h4>
-                <p>Text-based logo version for UltraRoast branding.</p>
-                <a href="porto/UltraRoast Coffee Roastery/Logo-Text.png" title="UltraRoast Text Logo" data-gallery="portfolio-gallery-ultraroast" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <!-- WEBDEV SECTION -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="web/SILAWAK/Layanan Wakaf Kantor Pertanahan Sukoharjo.jpg" class="img-fluid" alt="SILAWAK – Wakaf Sukoharjo">
-          <div class="portfolio-info">
-            <h4>SILAWAK – Wakaf Sukoharjo</h4>
-            <p>Landing page design for the SILAWAK wakaf service website.</p>
-            <a href="web/SILAWAK/Layanan Wakaf Kantor Pertanahan Sukoharjo.jpg" title="SILAWAK – Wakaf Sukoharjo" data-gallery="portfolio-gallery-silawak" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="detailsSILAWAK.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="web/Web Loker CCED Universitas Lampung/UserDashboard.png" class="img-fluid" alt="User Dashboard - CCED">
-          <div class="portfolio-info">
-            <h4>User Dashboard</h4>
-            <p>Dashboard view for job seekers on the CCED job portal.</p>
-            <a href="web/Web Loker CCED Universitas Lampung/UserDashboard.png" title="User Dashboard" data-gallery="portfolio-gallery-cced" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="detailsCCED.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <!-- CERTIF SECTION -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate">
-          <img src="certificate/dicoding.jpg" class="img-fluid" alt="Dicoding Certificate">
-          <div class="portfolio-info">
-            <h4>Dicoding (2025) – Basic Web Programming</h4>
-            <p>Completed Basic Web Programming course.</p>
-            <a href="certificate/dicoding.jpg" title="Dicoding Certificate" data-gallery="portfolio-gallery-certif" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="detailsDicoding.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate">
-          <img src="certificate/gemastik.jpg" class="img-fluid" alt="GEMASTIK & LIDM Certificate">
-          <div class="portfolio-info">
-            <h4>GEMASTIK & LIDM (2022)</h4>
-            <p>Participant in national tech competition socialization.</p>
-            <a href="certificate/gemastik.jpg" title="GEMASTIK & LIDM Certificate" data-gallery="portfolio-gallery-certif" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="detailsGemastik.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate">
-          <img src="certificate/software.jpg" class="img-fluid" alt="Alumni Talk Certificate">
-          <div class="portfolio-info">
-            <h4>Alumni Talk (2021)</h4>
-            <p>Seminar on Android Software Engineer in Startups.</p>
-            <a href="certificate/software.jpg" title="Alumni Talk Certificate" data-gallery="portfolio-gallery-certif" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="detailsAlumni.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate">
-          <img src="certificate/mobile.jpg" class="img-fluid" alt="Mobile Developer Guest Lecture Certificate">
-          <div class="portfolio-info">
-            <h4>Guest Lecture (2020)</h4>
-            <p>Talk on Roadmaps to Become a Mobile Developer.</p>
-            <a href="certificate/mobile.jpg" title="Guest Lecture Certificate" data-gallery="portfolio-gallery-certif" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="detailsMobile.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+        <!-- ADS QUALITY RATER -->
+        <div class="resume-item">
+          <h4>Ads Quality Rater (Remote)</h4>
+          <h5>Oct 2025 - Present</h5>
+          <p><em>Welocalize</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Evaluated AI-generated ad and web content for accuracy, UX compliance, and contextual relevance.</li>
+            <li>Gained insights into large-scale data evaluation, quality assurance, and human-in-the-loop AI systems.</li>
+            <li>Collaborated remotely with international teams to maintain content integrity and user experience quality.</li>
+          </ul>
         </div>
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Providing professional services in web development, graphic design, and multimedia editing to support your digital needs.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-laptop"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Web Development</h3>
-              </a>
-              <p>Building responsive and interactive websites using PHP, JavaScript, HTML, CSS, and modern frameworks.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Graphic Design</h3>
-              </a>
-              <p>Designing visual materials such as logos, banners, and social media content using Adobe Photoshop and Illustrator.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bi bi-camera-reels"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Video Editing</h3>
-              </a>
-              <p>Professional video editing using Adobe Premiere and After Effects for promotions and documentation.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
+        <!-- LECTURER ROLES -->
+        <div class="resume-item">
+          <h4>AR/VR Assistant Lecturer</h4>
+          <h5>Feb 2023 - Jul 2025</h5>
+          <p><em>University of Lampung</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Delivered lectures on AR/VR fundamentals and user experience in immersive environments.</li>
+            <li>Guided students in designing interactive and user-friendly virtual projects.</li>
+            <li>Emphasized usability testing and feedback-driven improvements in UI/UX design.</li>
+          </ul>
         </div>
 
+        <div class="resume-item">
+          <h4>Web Programming Assistant Lecturer</h4>
+          <h5>Feb 2022 - Jul 2024</h5>
+          <p><em>University of Lampung</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Assisted in teaching responsive web development with HTML, CSS, JavaScript, and PHP.</li>
+            <li>Mentored students through hands-on projects and guided them in applying clean code principles.</li>
+            <li>Encouraged UI/UX best practices and system scalability concepts in coursework.</li>
+          </ul>
+        </div>
+
+        <!-- PUBLIC RELATIONS INTERN -->
+        <div class="resume-item">
+          <h4>Public Relations Intern</h4>
+          <h5>Dec 2022 - Feb 2023</h5>
+          <p><em>Ministry of Religious Affairs, Lampung Province</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Developed a web-based document archiving system improving workflow efficiency.</li>
+            <li>Designed internal digital documentation tools for data accessibility and record accuracy.</li>
+            <li>Collaborated with administrative teams to enhance communication and data flow processes.</li>
+          </ul>
+        </div>
+
+        <!-- CUSTOMER EXPERIENCE & OPERATIONS SUPERVISOR -->
+        <div class="resume-item">
+          <h4>Customer Experience & Operations Supervisor</h4>
+          <h5>Aug 2021 - Mar 2024</h5>
+          <p><em>PT. Flamboys Roaster Indonesia</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Managed day-to-day service operations, ensuring customer satisfaction and efficiency in a fast-paced environment.</li>
+            <li>Handled bookings, client communications, and daily reports with accuracy and responsiveness.</li>
+            <li>Trained new team members in service standards, product knowledge, and communication skills.</li>
+            <li>Oversaw inventory management and staff scheduling for smooth daily operations.</li>
+            <li>Implemented digital record-keeping and workflow improvements to optimize team coordination.</li>
+          </ul>
+        </div>
+
+        <!-- STORE & SERVICE MANAGER -->
+        <div class="resume-item">
+          <h4>Store & Service Manager (Part-time)</h4>
+          <h5>Jan 2022 - Nov 2023</h5>
+          <p><em>Serodja Coffee</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Supervised service quality and team performance to ensure consistent customer experience.</li>
+            <li>Managed procurement, inventory documentation, and supplier relations.</li>
+            <li>Coordinated staff scheduling and training for operational efficiency.</li>
+            <li>Introduced digital checklists for day-to-day operations to improve accuracy and reporting.</li>
+          </ul>
+        </div>
+
+        <!-- CUSTOMER SERVICE ASSOCIATE -->
+        <div class="resume-item">
+          <h4>Customer Service Associate (Part-time)</h4>
+          <h5>Nov 2024 - Feb 2025</h5>
+          <p><em>Maru House</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Delivered excellent customer support, handling orders and inquiries professionally.</li>
+            <li>Maintained order accuracy and ensured a clean, welcoming service environment.</li>
+            <li>Worked closely with teammates to maintain fast-paced efficiency during high-traffic hours.</li>
+          </ul>
+        </div>
+
+        <!-- BARISTA -->
+        <div class="resume-item">
+          <h4>Barista (Part-time)</h4>
+          <h5>Apr 2024 - Jul 2024</h5>
+          <p><em>Sakato Coffee</em></p>
+          <ul style="list-style-type: disc; padding-left: 1.2rem;">
+            <li>Provided friendly and efficient service while supporting daily café operations.</li>
+            <li>Served customers promptly and courteously while maintaining quality and cleanliness standards.</li>
+            <li>Contributed to a positive team environment and overall service excellence.</li>
+          </ul>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+</section><!-- /Resume Section -->
+
+<!-- Portfolio Section -->
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2>Graphic Design Portfolio</h2>
+    <p>Explore my selected works in branding, logo design, promotional media, and creative visual content. Each project showcases my attention to detail and passion for visual storytelling.</p>
+
+    <!-- Button to Web Portfolio -->
+    <a href="https://project-fahmibastari.netlify.app/" target="_blank" class="btn btn-primary mt-3" style="border-radius: 50px; padding: 10px 25px;">
+      <i class="bi bi-globe"></i> Visit Web Developer Portfolio
+    </a>
+
+    <!-- Button to open modal -->
+    <button id="openPortfolioModal" class="btn btn-outline-primary mt-3" style="border-radius: 50px; padding: 10px 25px;">
+      <i class="bi bi-images"></i> View Graphic Design Portfolio
+    </button>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="portfolioModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-2xl w-11/12 max-w-6xl h-[90vh] overflow-y-auto relative p-6 shadow-2xl">
+    
+    <!-- Close Button -->
+    <button id="closePortfolioModal" class="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl font-bold">&times;</button>
+
+    <h3 class="text-2xl font-bold text-center mb-6">Graphic Design Projects</h3>
+
+    <!-- Masonry Gallery -->
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+      <!-- Precious Moments -->
+      <img loading="lazy" src="porto/Precious Moments/Logo-Warm.png" alt="Precious Moments Logo Warm" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/Precious Moments/Logo-Text.png" alt="Precious Moments Logo Text" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/Precious Moments/brandguideline.png" alt="Precious Moments Brand Guideline" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/Precious Moments/twibbonPromo.png" alt="Precious Moments Twibbon" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/Precious Moments/InstagramStory1.png" alt="Instagram Story" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/Precious Moments/InstagramStoryPromo.png" alt="Instagram Story Promo" class="w-full rounded-xl shadow hover:scale-105 transition">
+
+      <!-- Some Sweets -->
+      <img loading="lazy" src="porto/Some Sweets/Foto Produk 1- Melted Top Biscuit.png" alt="Melted Top Biscuit" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/Some Sweets/Foto Produk 2 - Kopsu Series.png" alt="Kopsu Series" class="w-full rounded-xl shadow hover:scale-105 transition">
+
+      <!-- Isti -->
+      <img loading="lazy" src="porto/isti/1.png" alt="Isti 1" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/isti/2.png" alt="Isti 2" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/isti/3.png" alt="Isti 3" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/isti/4.png" alt="Isti 4" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/isti/5.png" alt="Isti 5" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/isti/6.png" alt="Isti 6" class="w-full rounded-xl shadow hover:scale-105 transition">
+
+      <!-- Kekari -->
+      <img loading="lazy" src="porto/Kekari Squad/GSTEAM_Jersey.jpg" alt="Kekari Jersey" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/Kekari Squad/Uniform.jpg" alt="Kekari Uniform" class="w-full rounded-xl shadow hover:scale-105 transition">
+
+      <!-- Banner -->
+      <img loading="lazy" src="porto/Banner/Banner-Graduation-Ambasuki.jpg" alt="Banner Ambasuki" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/Banner/Banner-Graduation-Order UM Malang.jpg" alt="Banner UM Malang" class="w-full rounded-xl shadow hover:scale-105 transition">
+
+      <!-- Minjem Kulkas -->
+      <img loading="lazy" src="porto/Minjem Kulkas/Logo.jpg" alt="Minjem Kulkas Logo" class="w-full rounded-xl shadow hover:scale-105 transition">
+
+      <!-- Trotoar -->
+      <img loading="lazy" src="porto/Trotoar Coffee/TrotoarCoffee-Logo.png" alt="Trotoar Coffee" class="w-full rounded-xl shadow hover:scale-105 transition">
+
+      <!-- Amba -->
+      <img loading="lazy" src="porto/amba/image1.png" alt="Amba 1" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/amba/image2.png" alt="Amba 2" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/amba/image3.png" alt="Amba 3" class="w-full rounded-xl shadow hover:scale-105 transition">
+
+      <!-- UltraRoast -->
+      <img loading="lazy" src="porto/UltraRoast Coffee Roastery/Logo-Full.png" alt="UltraRoast Full" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/UltraRoast Coffee Roastery/Logo-Icon.png" alt="UltraRoast Icon" class="w-full rounded-xl shadow hover:scale-105 transition">
+      <img loading="lazy" src="porto/UltraRoast Coffee Roastery/Logo-Text.png" alt="UltraRoast Text" class="w-full rounded-xl shadow hover:scale-105 transition">
+    </div>
+  </div>
+</div>
+
+<!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>Offering creative and technical services across web development, design, education, and business management.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Web Development -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item item-red position-relative">
+          <div class="icon"><i class="bi bi-laptop"></i></div>
+          <h3>Web Development</h3>
+          <p>Developing modern, responsive, and scalable web apps using Laravel, CodeIgniter, and JavaScript frameworks.</p>
+        </div>
       </div>
 
-    </section><!-- /Services Section -->
+      <!-- UI/UX & Front-End -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item item-purple position-relative">
+          <div class="icon"><i class="bi bi-window-sidebar"></i></div>
+          <h3>UI/UX & Front-End Design</h3>
+          <p>Designing user-centered interfaces using Figma and Tailwind CSS with focus on accessibility and aesthetics.</p>
+        </div>
+      </div>
+
+      <!-- Graphic Design -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item item-teal position-relative">
+          <div class="icon"><i class="bi bi-brush"></i></div>
+          <h3>Graphic Design</h3>
+          <p>Creating impactful logos, posters, and branding materials with Adobe Illustrator and Photoshop.</p>
+        </div>
+      </div>
+
+      <!-- Video Editing -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item item-pink position-relative">
+          <div class="icon"><i class="bi bi-camera-reels"></i></div>
+          <h3>Video Editing</h3>
+          <p>Editing promotional and event videos using Premiere Pro and After Effects for storytelling and marketing.</p>
+        </div>
+      </div>
+
+      <!-- Teaching -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item item-yellow position-relative">
+          <div class="icon"><i class="bi bi-person-workspace"></i></div>
+          <h3>Teaching & Mentoring</h3>
+          <p>Facilitating interactive classes in English, web programming, and digital literacy with practical approaches.</p>
+        </div>
+      </div>
+
+      <!-- Business Operations -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item item-blue position-relative">
+          <div class="icon"><i class="bi bi-people"></i></div>
+          <h3>Business Operations</h3>
+          <p>Managing daily business workflows, client relations, and creative operations to maintain efficiency and quality.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     
 <!-- Contact Section -->
@@ -655,7 +618,7 @@
           <i class="bi bi-geo-alt flex-shrink-0"></i>
           <div>
             <h3>Address</h3>
-            <p>Teluk Betung Selatan, Bandar Lampung, Indonesia</p>
+            <p>Bandar Lampung, Indonesia</p>
           </div>
         </div><!-- End Info Item -->
 
@@ -671,13 +634,13 @@
           <i class="bi bi-envelope flex-shrink-0"></i>
           <div>
             <h3>Email Me</h3>
-            <p>fahmibastari549@gmail.com</p>
+            <p>fahmibastari.work@gmail.com</p>
           </div>
         </div><!-- End Info Item -->
 
       </div>
 
-          <!-- <div class="col-lg-8">
+          <div class="col-lg-8">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
@@ -707,7 +670,7 @@
 
               </div>
             </form>
-          </div>End Contact Form -->
+          </div>
 
         </div>
 
@@ -759,6 +722,29 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+<!-- Modal Script -->
+<script>
+  const modal = document.getElementById("portfolioModal");
+  const openBtn = document.getElementById("openPortfolioModal");
+  const closeBtn = document.getElementById("closePortfolioModal");
+
+  openBtn.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      document.body.style.overflow = "auto";
+    }
+  });
+</script>
 </body>
 
 </html>

@@ -523,6 +523,9 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+    /* ✨ Tambahan shadow tipis */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 0;
 }
 
 .hero img {
@@ -552,11 +555,13 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero p {
   margin: 5px 0 0 0;
   font-size: 26px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero p span {
@@ -566,6 +571,7 @@ section,
 
 .hero .social-links {
   margin-top: 25px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero .social-links a {
@@ -1450,7 +1456,101 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+/* ===== Base Card Style ===== */
+.service-item {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
 
+.service-item .icon {
+  font-size: 44px;
+  color: var(--accent-color, #007bff);
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.service-item:hover .icon {
+  transform: scale(1.1);
+}
+
+/* ===== Color Accents ===== */
+.item-red { border-top: 3px solid #e63946; }
+.item-purple { border-top: 3px solid #9b5de5; }
+.item-teal { border-top: 3px solid #06d6a0; }
+.item-pink { border-top: 3px solid #f28482; }
+.item-yellow { border-top: 3px solid #f7b801; }
+.item-blue { border-top: 3px solid #118ab2; }
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 992px) {
+  .service-item {
+    padding: 25px 18px;
+  }
+  .service-item h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    padding: 22px 16px;
+  }
+  .service-item .icon {
+    font-size: 38px;
+  }
+  .service-item h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .service-item p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-item {
+    padding: 18px 12px;
+    border-radius: 12px;
+  }
+  .service-item .icon {
+    font-size: 34px;
+    margin-bottom: 8px;
+  }
+  .service-item h3 {
+    font-size: 15px;
+  }
+  .service-item p {
+    font-size: 12.5px;
+  }
+  .section-title h2 {
+    font-size: 22px;
+  }
+  .section-title p {
+    font-size: 14px;
+  }
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
