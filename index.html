@@ -51,7 +51,7 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <!-- <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li> -->
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portofolio</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
@@ -104,152 +104,214 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-8 content text-center">
-            <h2>Front-End & Mobile Developer</h2>
-            <p class="fst-italic py-3">
-              Passionate about creating modern, data-driven, and user-friendly web and mobile applications through clean code,
-              scalability, and thoughtful UI/UX design.
-            </p>
+
+  <!-- Resume Download Section -->
+<div class="container section-title text-center px-4" data-aos="fade-up">
+  <h2 class="text-3xl md:text-4xl font-bold mb-2">Download My Resume</h2>
+  <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+    Want to explore my professional experience, highlighted projects, and technical skills?
+    Download my resume in PDF format for a complete overview.
+  </p>
+<br>
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+    <!-- View (open in new tab) -->
+    <a
+      href="assets/resume/Fahmi_Bastari_Resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-white text-gray-800 border border-gray-200 shadow hover:shadow-lg transition w-full sm:w-auto justify-center"
+      title="Open resume in a new tab"
+    >
+      <!-- eye icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7S3.732 16.057 2.458 12z" />
+      </svg>
+      <span class="font-medium">View Resume</span>
+    </a>
+
+    <!-- Download (force download) -->
+    <a
+      href="assets/resume/Fahmi_Bastari_Resume.pdf"
+      download="Fahmi_Bastari_Resume.pdf"
+      class="inline-flex items-center gap-3 px-5 py-3 rounded-full text-white font-semibold shadow-md hover:opacity-90 transition w-full sm:w-auto justify-center"
+      style="background-color: #0563bb;"
+      title="Download resume (PDF)"
+    >
+      <!-- download icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 4v12m0 0l4-4m-4 4-4-4" />
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M20 20H4" />
+      </svg>
+      <span>Download PDF</span>
+    </a>
+  </div>
+</div>
+
+            
+<!-- Skill Section (2 Column Layout) -->
+<div class="max-w-7xl mx-auto">
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">My Skills</h2>
   
-            <!-- Skill Section (Expanded + Hover + Tooltip) -->
-<div class="flex flex-col items-center justify-center py-8 space-y-10">
+  <!-- Grid Container: 2 kolom di desktop, 1 kolom di mobile -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+    
+    <!-- Kolom Kiri -->
+    <div class="space-y-10">
+      
+      <!-- Languages & Frameworks -->
+      <div data-aos="fade-up">
+        <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 after:mt-2">
+          Languages & Frameworks
+        </h3>
 
-  <!-- === Languages & Frameworks === -->
-  <div class="mb-12" data-aos="fade-up">
-    <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 after:mt-2">
-      Languages & Frameworks
-    </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-html5-plain text-5xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">HTML</p>
+          </div>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-      <!-- Items -->
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-html5-plain text-6xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">HTML</p>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-css3-plain text-5xl text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">CSS</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-javascript-plain text-5xl text-yellow-400 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">JavaScript</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-typescript-plain text-5xl text-blue-600 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">TypeScript</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-php-plain text-5xl text-indigo-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">PHP</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-laravel-plain text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Laravel</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-codeigniter-plain text-5xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">CodeIgniter</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-react-original text-5xl text-sky-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">React</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <span class="iconify text-5xl text-gray-900 group-hover:scale-110 transition-transform duration-300" data-icon="skill-icons:nextjs-light"></span>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Next.js</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-nodejs-plain text-5xl text-green-600 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Node.js</p>
+          </div>
+        </div>
       </div>
 
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-css3-plain text-6xl text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">CSS</p>
-      </div>
+      <!-- UI/UX & Tools -->
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-purple-500 after:to-pink-500 after:mt-2">
+          UI/UX & Tools
+        </h3>
 
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-javascript-plain text-6xl text-yellow-400 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">JavaScript (ES6+)</p>
-      </div>
-
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-typescript-plain text-6xl text-blue-600 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">TypeScript</p>
-      </div>
-
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-php-plain text-6xl text-indigo-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">PHP</p>
-      </div>
-
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-laravel-plain text-6xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Laravel</p>
-      </div>
-
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-codeigniter-plain text-6xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">CodeIgniter</p>
-      </div>
-
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-react-original text-6xl text-sky-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">React</p>
-      </div>
-
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <span class="iconify text-6xl text-gray-900 group-hover:scale-110 transition-transform duration-300" data-icon="skill-icons:nextjs-light"></span>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Next.js</p>
-      </div>
-
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-nodejs-plain text-6xl text-green-600 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Node.js</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-tailwindcss-plain text-5xl text-teal-400 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Tailwind CSS</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-figma-plain text-5xl text-purple-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Figma</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-git-plain text-5xl text-orange-600 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Git</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-docker-plain text-5xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Docker</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-vercel-original text-5xl text-black group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Vercel</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-netlify-plain text-5xl text-teal-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Netlify</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- === Database & APIs === -->
-  <div class="mb-12" data-aos="fade-up" data-aos-delay="100">
-    <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-green-500 after:to-blue-500 after:mt-2">
-      Database & APIs
-    </h3>
+    <!-- Kolom Kanan -->
+    <div class="space-y-10">
+      
+      <!-- Database & APIs -->
+      <div data-aos="fade-up" data-aos-delay="50">
+        <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-green-500 after:to-blue-500 after:mt-2">
+          Database & APIs
+        </h3>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-postgresql-plain text-6xl text-sky-600 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">PostgreSQL</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-postgresql-plain text-5xl text-sky-600 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">PostgreSQL</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-mysql-plain text-5xl text-blue-600 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">MySQL</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-prisma-original text-5xl text-gray-700 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Prisma ORM</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-supabase-plain text-5xl text-emerald-600 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">Supabase</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-graphql-plain text-5xl text-pink-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">GraphQL</p>
+          </div>
+          <div class="group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
+            <i class="devicon-postman-plain text-5xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
+            <p class="font-medium text-gray-800 mt-2 text-xs">REST API</p>
+          </div>
+        </div>
       </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-mysql-plain text-6xl text-blue-600 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">MySQL</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-prisma-original text-6xl text-gray-700 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Prisma ORM</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-supabase-plain text-6xl text-emerald-600 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Supabase</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-graphql-plain text-6xl text-pink-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">GraphQL</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-postman-plain text-6xl text-orange-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">REST API</p>
-      </div>
+
     </div>
-  </div>
 
-  <!-- === UI/UX & Tools === -->
-  <div data-aos="fade-up" data-aos-delay="200">
-    <h3 class="text-xl font-semibold text-gray-700 mb-6 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:mx-auto after:bg-gradient-to-r after:from-purple-500 after:to-pink-500 after:mt-2">
-      UI/UX & Tools
-    </h3>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-tailwindcss-plain text-6xl text-teal-400 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Tailwind CSS</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-figma-plain text-6xl text-purple-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Figma</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-git-plain text-6xl text-orange-600 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Git</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-docker-plain text-6xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Docker</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-vercel-original text-6xl text-black group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Vercel</p>
-      </div>
-      <div class="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-        <i class="devicon-netlify-plain text-6xl text-teal-500 group-hover:scale-110 transition-transform duration-300"></i>
-        <p class="font-medium text-gray-800 mt-3 text-sm">Netlify</p>
-      </div>
-    </div>
   </div>
-      </div>
+</div>
 
     </section><!-- /About Section -->
-<!-- Resume Section -->
-<section id="resume" class="resume section">
+
+
+
+<!-- <section id="resume" class="resume section">
 
   <div class="container">
     <div class="row gy-4">
 
-      <!-- LEFT COLUMN -->
+      
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
         <h3 class="resume-title">Summary</h3>
@@ -261,7 +323,7 @@
             <li>+62 812-7166-2745</li>
             <li>fahmibastari.work@gmail.com</li>
           </ul>
-        </div><!-- End Summary -->
+        </div>
 
         <h3 class="resume-title">Education</h3>
         <div class="resume-item">
@@ -273,7 +335,7 @@
             <li>Thesis: “Development of Web-Based Job Vacancy Information System at CCED Universitas Lampung.”</li>
             <li>Developed using Next.js, Prisma ORM, NeonDB, and Tailwind CSS focusing on usability and performance optimization.</li>
           </ul>
-        </div><!-- End Education -->
+        </div>
         <h3 class="resume-title">Leadership & Organizational Experience</h3>
         <div class="resume-item">
           <h4>Community Service Program (Leader)</h4>
@@ -284,7 +346,7 @@
             <li>Organized digital literacy and web-based education programs, ensuring all projects were completed successfully.</li>
             <li>Developed leadership, teamwork, and decision-making skills through real-world challenges.</li>
           </ul>
-        </div><!-- End Experience Item -->
+        </div>
 
         <div class="resume-item">
           <h4>Technology Club & Student Projects</h4>
@@ -295,7 +357,7 @@
             <li>Strengthened adaptability, public speaking, and problem-solving skills in team environments.</li>
             <li>Actively participated in UI/UX innovation and mobile prototyping projects promoting inclusive technology adoption.</li>
           </ul>
-        </div><!-- End Experience Item -->
+        </div>
         <h3 class="resume-title">Certifications</h3>
 
         <div class="resume-item">
@@ -338,18 +400,18 @@
               <a href="https://drive.google.com/file/d/1uMQTNaP5uCBohXTON87ElEq7pj-5n20E/view?usp=drive_link" target="_blank">View Certificate</a>
             </li>
           </ul>
-        </div><!-- End Certifications -->
+        </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
+      
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
 
         <h3 class="resume-title">Experience</h3>
 
-        <!-- ADS QUALITY RATER -->
+        
         <div class="resume-item">
           <h4>Ads Quality Rater (Remote)</h4>
-          <h5>Oct 2025 - Present</h5>
+          <h5>Freelance</h5>
           <p><em>Welocalize</em></p>
           <ul style="list-style-type: disc; padding-left: 1.2rem;">
             <li>Evaluated AI-generated ad and web content for accuracy, UX compliance, and contextual relevance.</li>
@@ -358,7 +420,7 @@
           </ul>
         </div>
 
-        <!-- LECTURER ROLES -->
+        
         <div class="resume-item">
           <h4>AR/VR Assistant Lecturer</h4>
           <h5>Feb 2023 - Jul 2025</h5>
@@ -381,7 +443,7 @@
           </ul>
         </div>
 
-        <!-- PUBLIC RELATIONS INTERN -->
+       
         <div class="resume-item">
           <h4>Public Relations Intern</h4>
           <h5>Dec 2022 - Feb 2023</h5>
@@ -393,7 +455,7 @@
           </ul>
         </div>
 
-        <!-- CUSTOMER EXPERIENCE & OPERATIONS SUPERVISOR -->
+       
         <div class="resume-item">
           <h4>Customer Experience & Operations Supervisor</h4>
           <h5>Aug 2021 - Mar 2024</h5>
@@ -407,7 +469,7 @@
           </ul>
         </div>
 
-        <!-- STORE & SERVICE MANAGER -->
+        
         <div class="resume-item">
           <h4>Store & Service Manager (Part-time)</h4>
           <h5>Jan 2022 - Nov 2023</h5>
@@ -420,7 +482,7 @@
           </ul>
         </div>
 
-        <!-- CUSTOMER SERVICE ASSOCIATE -->
+        
         <div class="resume-item">
           <h4>Customer Service Associate (Part-time)</h4>
           <h5>Nov 2024 - Feb 2025</h5>
@@ -432,7 +494,7 @@
           </ul>
         </div>
 
-        <!-- BARISTA -->
+        
         <div class="resume-item">
           <h4>Barista (Part-time)</h4>
           <h5>Apr 2024 - Jul 2024</h5>
@@ -449,7 +511,7 @@
       </div>
     </div>
   </div>
-</section><!-- /Resume Section -->
+</section> -->
 
 <!-- Portfolio Section -->
 <!-- Portfolio Section -->
